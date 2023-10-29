@@ -89,6 +89,21 @@ body {
 /*Navbar Searh Form*/
 .navbar .search-form {
   position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #ffffff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #066f89;
+  padding: 1rem;
 }
 
 /* Hero Section */
