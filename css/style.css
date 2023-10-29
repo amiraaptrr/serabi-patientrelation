@@ -103,7 +103,14 @@ body {
   width: 100%;
   font-size: 1.6rem;
   color: #066f89;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--primary);
 }
 
 /* Hero Section */
