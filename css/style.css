@@ -1,0 +1,350 @@
+:root {
+  --primary: #066f89;
+  --background: #fbf7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary);
+  color: #000000;
+  /*min-height: 3000px;*/
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #000000;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  display: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(78, 123, 182) 8%,
+    rgba(106, 152, 170, 0.945) 50%
+  ); /*ini belum nemu biar jadi background transparan gimana ya, di tutorial di menit ke 1 jam*/
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4 rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/*Admission Section*/
+.admission,
+.call-center,
+.customer-service {
+  padding: 8rem 7% 1.4rem;
+  color: #fff;
+}
+
+.admission h2,
+.call-center h2,
+.customer-service h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.admission h2 span,
+.call-center h2 span,
+.customer-service h2 span {
+  color: var(#000000);
+}
+
+.admission .row {
+  display: flex;
+}
+
+.admission .row .admission-img {
+  flex: 1 1 45rem;
+}
+
+.admission .row .admission-img img {
+  width: 100%;
+}
+
+.admission .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.admission .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.admission .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+}
+
+/* Call Center Section */
+.call-center h2,
+.customer-service h2 {
+  margin-bottom: 1rem;
+}
+
+.call-center p,
+.customer-service p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.call-center .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.call-center .row .call-center-image {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.call-center .row .call-center-image img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.call-center .row .call-center-image .call-center-title {
+  margin-top: 1rem auto 0.5rem;
+}
+
+/* Customer Service */
+.customer-service .kepuasanpasien {
+  text-align: center;
+  margin: 1rem;
+}
+
+/*Footer*/
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer .links a {
+  padding: 1rem 0;
+}
+
+footer .links a:hover {
+  color: #000000;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: #000000;
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 30rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #000000;
+    display: block;
+    margin: 1.5rem; /*24pixel*/
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .admission .row {
+    flex-wrap: wrap;
+    object-position: center;
+  }
+
+  .admission .row .admission-img img {
+    height: 24rem;
+    object-fit: cover;
+  }
+
+  .admission .row .content {
+    padding: 0;
+  }
+
+  .admission .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .admission .row .content p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
