@@ -319,6 +319,13 @@ footer .credit a {
     font-size: 62.5%;
   }
 
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  }
+
   #hamburger-menu {
     display: inline-block;
   }
@@ -378,12 +385,5 @@ footer .credit a {
 
   .admission .row .content p {
     font-size: 1.6rem;
-  }
-}
-
-/* Mobile Phone */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
   }
 }
