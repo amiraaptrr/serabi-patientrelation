@@ -28,3 +28,8 @@ document.addEventListener("click", function (e) {
     searchForm.classList.remove("active");
   }
 });
+
+function showTooltip() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.style.visibility = "visible";
+}
